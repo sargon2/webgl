@@ -34,8 +34,8 @@ function getShader(gl, id) {
 function start() {
         var canvas = document.getElementById("canvas");
         gl = canvas.getContext("experimental-webgl");
-        canvas.width = document.width;
-        canvas.height = document.height;
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
         gl.viewportWidth = canvas.width;
         gl.viewportHeight = canvas.height;
         gl.clearColor(0.0, 0.0, 0.0, 1.0);
